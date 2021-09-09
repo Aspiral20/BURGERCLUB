@@ -11,7 +11,7 @@ $(document).ready(() => {
 
         $('#' + id + ' .products').slick('refresh');
         $('#' + id + ' .products-nav').slick('refresh');
-    })
+    });
 
     $('#burgers-container .products').slick({
         slidesToShow: 1,

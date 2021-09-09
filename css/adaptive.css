@@ -302,7 +302,9 @@
     }
 
     #header #menu {
-        top: 122px;
+        top: 0;
+        padding-top: 122px;
+        height: 100%;
     }
 
     #title-burgers {
