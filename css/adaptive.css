@@ -357,3 +357,9 @@
         right: -26px;
     }
 }
+
+@media screen and (max-width: 340px){
+    #reservation-container #reservation {
+        max-width: 300px;
+    }
+}

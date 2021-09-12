@@ -117,19 +117,19 @@ $(document).ready(() => {
         let time = $('#time');
 
         if (name.val() && count.val() && phone.val() && time.val()) {
-            // $('#reservation-send').show();
-            // $('#reservation-content').hide();
+            $('#reservation-send').show();
+            $('#reservation-content').hide();
             $.ajax({
                 type: 'post',
                 url: 'mail.php',
                 data: 'name' + name.val() + '&count=' + count.val() + '&phone' + phone.val() + '&time' + time.val(),
                 success: () => {
-                    $('#reservation-send').show();
-                    $('#reservation-content').hide();
+                    // $('#reservation-send').show();
+                    // $('#reservation-content').hide();
                 },
                 error: () => {
-                    $('#reservation-container').hide();
-                    alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
+                    // $('#reservation-container').hide();
+                    // alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
                 }
             });
         } else {

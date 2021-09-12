@@ -510,6 +510,7 @@ body {
     margin: 85px auto;
     width: 1170px;
     text-align: center;
+    outline: none;
 }
 
 #instagram a {
